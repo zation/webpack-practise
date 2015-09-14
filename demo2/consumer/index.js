@@ -1,1 +1,1 @@
-console.log('this is consumer');
+document.getElementById('content').innerText = 'This is Consumer page';

@@ -1,1 +1,1 @@
-console.log('this is admin');
+document.getElementById('content').innerText = 'This is Admin page';
