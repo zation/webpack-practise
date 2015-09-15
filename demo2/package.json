@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors",
-    "build": "webpack --progress --colors"
+    "start": "webpack-dev-server --progress --colors --hot",
+    "build": "webpack --progress --colors --minify"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "node-argv": "0.0.7",
     "webpack": "1.12.1",
     "webpack-dev-server": "1.10.1"
   }
