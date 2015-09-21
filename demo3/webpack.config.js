@@ -9,6 +9,12 @@ var config = {
     path: path.join(__dirname, 'dist'),
     publicPath: '/dist/',
     filename: '[name].bundle.js'
+  },
+  module: {
+    loaders: [{
+      test: /\.png$/,
+      loader: 'file'
+    }]
   }
 };
 
