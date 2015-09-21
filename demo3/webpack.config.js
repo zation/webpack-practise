@@ -12,8 +12,11 @@ var config = {
   },
   module: {
     loaders: [{
-      test: /\.png$/,
+      test: /\/images\//,
       loader: 'file'
+    }, {
+      test: /\/icons\//,
+      loader: 'url'
     }]
   }
 };
