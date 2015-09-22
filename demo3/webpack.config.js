@@ -11,6 +11,7 @@ var config = {
     filename: '[name].bundle.js'
   },
   module: {
+    noParse: [/jquery/],
     loaders: [{
       test: /\/images\//,
       loader: 'file'
