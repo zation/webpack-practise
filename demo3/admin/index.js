@@ -1,3 +1,5 @@
-require('style!css!./admin.css');
+import 'style!css!./admin.css';
 
-document.getElementById('content').innerText = 'This is Admin page';
+document.getElementById('content').innerText = `
+  This is Admin Page.
+  Welcome!`;

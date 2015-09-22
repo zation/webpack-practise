@@ -17,6 +17,10 @@ var config = {
     }, {
       test: /\/icons\//,
       loader: 'url'
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel'
     }]
   }
 };
