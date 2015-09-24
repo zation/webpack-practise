@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
-var args = require('node-args');
+
+var env = process.env.NODE_ENV;
 
 var config = {
   entry: ['./index'],
@@ -24,7 +25,7 @@ var config = {
   }
 };
 
-if (args.minify) {
+if (env === 'production') {
   config.plugins = config.plugins.concat(
     new webpack.optimize.UglifyJsPlugin({
       compress: {
