@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --inline -d",
-    "build": "webpack --progress --colors -p"
+    "build": "webpack --progress --colors"
   },
   "license": "ISC",
   "dependencies": {

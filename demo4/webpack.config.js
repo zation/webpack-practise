@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 var config = {
   entry: ['./index'],
@@ -7,6 +8,14 @@ var config = {
     publicPath: '/dist/',
     filename: 'bundle.js'
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.optimize.OccurenceOrderPlugin()
+  ],
   module: {
     loaders: [{
       test: /\.js$/,
