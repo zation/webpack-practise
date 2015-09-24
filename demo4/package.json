@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --inline -d"
+    "start": "webpack-dev-server --progress --colors --hot --inline -d",
+    "build": "webpack --progress --colors -p"
   },
   "license": "ISC",
   "dependencies": {
